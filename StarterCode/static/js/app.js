@@ -57,10 +57,12 @@ function plotChart(id) {
             };
 
         // Data variable
-        var data = [trace];
-        
+        var barLayout = {
+            title: "Top 10 Bacteria Found",
+            margin: { t: 30, l: 150 }
+          };
         // Bar plot
-        Plotly.newPlot("bar", data);
+        Plotly.newPlot("bar", [trace], barLayout);
 
         //Bubble chart
         var trace1 = {
