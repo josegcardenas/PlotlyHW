@@ -12,7 +12,7 @@ function buildMetadata(id) {
         //.html("") clears data that is already there
         PANEL.html("");
 
-        Object.entries(result).forEach((key) =>{
+        Object.entries(result).forEach(([key, value]) => {
             PANEL.append("h6").text(`${key.toUpperCase()}: ${value}`);
         });
     });
